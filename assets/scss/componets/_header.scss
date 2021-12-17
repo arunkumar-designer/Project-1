@@ -1,0 +1,42 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as fun;
+
+.header{
+    padding: 1rem 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Title Name */
+    &--title__name{
+        color: fun.theme-colors("primary")
+    }
+    /*menu ul*/
+    &--menu{
+        display: flex;
+        list-style: none;
+        text-transform: uppercase;
+
+    /*menu li and a*/
+    &__item > a{
+    margin-right: 3rem;
+    font-size: 14px;
+    font-weight: 600;
+    color:map-get(var.$theme-colors, "menu-text" );
+
+    &:hover{
+        color: fun.theme-colors("primary-hover");
+    }
+    /*Active Menu*/
+    &.active{
+        color: fun.theme-colors("primary-hover");
+    }
+
+
+    }
+
+    }
+
+    
+    
+}

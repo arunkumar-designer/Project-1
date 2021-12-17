@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap");
+/*variables*/
 * {
   padding: 0;
   margin: 0;
@@ -18,27 +19,26 @@ a {
   /* Title Name */
   /*menu ul*/
 }
+
 .header--title__name {
   color: #00dc64;
 }
+
 .header--menu {
   display: flex;
   list-style: none;
   text-transform: uppercase;
-  /*menu li and a*/
+  /*menu li*/
 }
-.header--menu__item > a {
+
+.header--menu__item {
   margin-right: 3rem;
   font-size: 14px;
   font-weight: 600;
-  color: #a7a7a7;
-  /*Active Menu*/
-}
-.header--menu__item > a:hover {
-  color: #00dc59;
-}
-.header--menu__item > a.active {
-  color: #00dc59;
+  /*Menu Anchor Tag*/
 }
 
-/*# sourceMappingURL=style.css.map */
+.header--menu__item a {
+  color: #777777;
+}
+/*# sourceMappingURL=main.css.map */
