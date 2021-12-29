@@ -1,9 +1,18 @@
 @use "../abstract/variable" as var;
 
-@function theme-colors($color:"primary"){
-    @return map-get(var.$theme-colors, $color);
+@function theme-colors($primary:"primary"){
+    @return map-get(var.$theme-colors, $primary);
+}
+@function theme-colors($dark:"dark"){
+    @return map-get(var.$theme-colors, $dark);
 }
 
-@function theme-colors($colors:"primary-hover"){
-    @return map-get(var.$theme-colors, $colors);
+@function theme-colors($secondary:"primary-hover"){
+    @return map-get(var.$theme-colors, $secondary);
+}
+@function theme-colors($light:"menu-text"){
+    @return map-get(var.$theme-colors, $light);
+}
+@function theme-colors($base:"base"){
+    @return map-get(var.$theme-colors, $base);
 }

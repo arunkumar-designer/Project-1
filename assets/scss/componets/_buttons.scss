@@ -1,0 +1,49 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions"as fun;
+
+.home-area--btn{
+
+    &__primary{
+    padding: 0.8rem 1.6rem;
+    border-radius: 22px;
+    background:fun.theme-colors("primary-hover");
+    line-height: 1;
+    border:none;
+    margin-right: 2rem;
+    }
+    &__primary:hover{
+        background: fun.theme-colors("base");
+        border: 1px solid fun.theme-colors("primary-hover");
+    }
+    &__link--contact{
+    color: fun.theme-colors("base");
+    font-weight: 550;
+    font-size: 0.9rem;
+    font-size: var.$font-primary;
+    }
+    &__link--contact:hover{
+        color:fun.theme-colors("primary-hover") ;
+    }
+    &__secondary{
+    padding: 0.8rem 1.6rem;
+    border-radius: 22px;
+    background:fun.theme-colors("base");
+    line-height: 1;
+    border: 1px solid fun.theme-colors("primary-hover");
+    }
+    &__secondary:hover{
+        background: fun.theme-colors("primary-hover");
+        
+    }
+    &__link--more{
+        color: fun.theme-colors("primary-hover");
+        font-weight: 550;
+        font-size: 0.9rem;
+        font-size: var.$font-primary;
+
+    }
+    &__link--more:hover{
+        color:fun.theme-colors("base");
+    }
+
+}

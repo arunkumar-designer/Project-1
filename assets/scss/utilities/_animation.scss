@@ -1,0 +1,33 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as fun;
+
+
+@keyframes box-shape{
+    0%{
+        transform: rotate(0deg);
+        border-color:fun.theme-colors("menu-text");
+    }
+    50%{
+        transform: rotate(180deg);
+        border-color:fun.theme-colors("primary");
+    }
+    100%{
+        transform: rotate(360deg);
+        border-color:fun.theme-colors("primary-hover");
+    }
+}
+@keyframes box-shapes{
+    0%{
+        transform: rotate(0deg);
+        border-color:fun.theme-colors("primary-hover");
+    }
+    50%{
+        transform: rotate(180deg);
+        border-color:fun.theme-colors("primary");
+    }
+    100%{
+        transform: rotate(360deg);
+        border-color:fun.theme-colors("menu-text");
+       
+    }
+}

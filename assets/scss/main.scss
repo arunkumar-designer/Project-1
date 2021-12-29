@@ -4,6 +4,21 @@
 
 // Base
 @import "./base/reset";
+@import "./base/global";
 
-// Component
-@import "./componets/header"
+// Components
+@import "./componets/buttons";
+
+
+// Pages
+@import "./pages/header";
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/service";
+
+// Layouts
+@import "./layouts/background";
+
+// Utilities
+@import "./utilities/spacing";
+@import "./utilities/animation";

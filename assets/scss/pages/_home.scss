@@ -1,0 +1,34 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as fun;
+.home-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+
+    &--content{
+        margin-right: 10rem;
+        max-width: 50rem;
+    }
+    &--title{
+        font-size: 2.5rem;
+        line-height: 1.2 ;
+        font-weight: 600;
+    }
+    &--desc{
+        margin-top:1.4rem;
+        font-size: 1rem;
+        line-height: 1.8;
+        color:fun.theme-colors("menu-text");
+      
+    }
+    
+    &--banner__image{
+        width:700px;
+        height: 550px;
+        margin-left: 5rem;
+    }
+    &--btn{
+        margin-top: 2rem ;
+    }
+}

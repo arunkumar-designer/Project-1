@@ -1,0 +1,87 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as fun;
+
+.background-design{
+    .box1{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 15px;
+        height: 15px;
+        background-color: transparent;
+        border:3px solid fun.theme-colors("primary");
+        border-radius: 0.25rem;
+        z-index: -1;
+        transform: rotate(70deg);
+        animation: box-shape linear 10s infinite;
+    }
+    .box2{
+        @extend .box1;
+        top: 50%;
+        left: 45%;
+        transform: rotate(50deg);
+    }
+    .box3{
+        @extend .box1;
+        top: 15%;
+        left: 85%;
+        transform: rotate(30deg);
+    }
+    .box4{
+        @extend .box1;
+        top: 80%;
+        left: 75%;
+        transform: rotate(45deg);
+    }
+    .box5{
+        @extend .box1;
+        top: 35%;
+        left: 55%;
+        transform: rotate(45deg);
+    }
+    .box6{
+        @extend .box1;
+        top: 90%;
+        left: 15%;
+        transform: rotate(45deg);
+    }
+    .dot1{
+        position: absolute;
+        top: 60%;
+        left: 15%;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        border:3px solid fun.theme-colors("menu-text");
+        border-radius: 50%;
+        z-index: -1;
+        animation: box-shapes linear 10s infinite;
+    }
+    .dot2{
+        @extend .dot1;
+        top: 25%;
+        left: 65%;
+    }
+    .dot3{
+        @extend .dot1;
+        top: 90%;
+        left: 60%;
+    }
+    .dot4{
+        @extend .dot1;
+        top: 40%;
+        left: 90%;
+    }
+    .dot5{
+        @extend .dot1;
+        top: 45%;
+        left: 25%;
+    }
+    .dot6{
+        @extend .dot1;
+        top: 15%;
+        left: 45%;
+
+   
+}
+}
