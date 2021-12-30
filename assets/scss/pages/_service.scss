@@ -1,0 +1,52 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as fun;
+
+.service{
+    padding: 4rem 10rem;
+    &--heading__title{
+
+    text-align: center;
+    color: fun.theme-colors("dark");
+    
+    }
+    &--heading__desc{
+    color: fun.theme-colors("menu-text");
+    text-align: center;
+    margin-top: 2rem;
+    }
+    &--items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+    }
+    &--item{
+        border: 2px solid green;
+        border-radius: 0.5rem;
+        text-align: center;
+        min-width: 250px;
+        padding:2.5rem ;
+        margin: 20px 40px;
+        &__img{
+            width: 2.5rem;
+            padding: 1.5rem 0;
+        }
+        &__title{
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+        }
+        &__desc{
+            color:fun.theme-colors("menu-text");
+            font-size: 0.9rem;
+        }
+        &__btn{
+            margin-top: 1.6rem;
+            a{
+                font-size: 0.8rem;
+                font-weight: 510;
+                color: fun.theme-colors("primary");
+            }
+        }
+    }
+}
