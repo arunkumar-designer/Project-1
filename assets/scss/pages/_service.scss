@@ -2,7 +2,9 @@
 @use "../abstract/functions" as fun;
 
 .service{
+    margin: 6rem 0;
     padding: 4rem 10rem;
+    background-color: fun.theme-colors("back");
     &--heading__title{
 
     text-align: center;
@@ -22,10 +24,9 @@
         margin-top: 4rem;
     }
     &--item{
-        border: 2px solid green;
         border-radius: 0.5rem;
         text-align: center;
-        min-width: 250px;
+        max-width: 250px;
         padding:2.5rem ;
         margin: 20px 40px;
         &__img{
@@ -48,5 +49,9 @@
                 color: fun.theme-colors("primary");
             }
         }
+        
+    }&--item:hover{
+        background-color: fun.theme-colors("base");
+        box-shadow: 0.7rem 0.7rem 0.5rem fun.theme-colors("hover");
     }
 }

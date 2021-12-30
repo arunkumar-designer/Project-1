@@ -16,3 +16,9 @@
 @function theme-colors($base:"base"){
     @return map-get(var.$theme-colors, $base);
 }
+@function theme-colors($hover:"hover"){
+    @return map-get(var.$theme-colors, $hover);
+}
+@function theme-colors($back:"back"){
+    @return map-get(var.$theme-colors, $back);
+}

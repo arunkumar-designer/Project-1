@@ -156,7 +156,9 @@ a {
 }
 
 .service {
+  margin: 6rem 0;
   padding: 4rem 10rem;
+  background-color: #F8F8F8;
 }
 .service--heading__title {
   text-align: center;
@@ -175,10 +177,9 @@ a {
   margin-top: 4rem;
 }
 .service--item {
-  border: 2px solid green;
   border-radius: 0.5rem;
   text-align: center;
-  min-width: 250px;
+  max-width: 250px;
   padding: 2.5rem;
   margin: 20px 40px;
 }
@@ -201,6 +202,61 @@ a {
   font-size: 0.8rem;
   font-weight: 510;
   color: #00dc64;
+}
+.service--item:hover {
+  background-color: #fff;
+  box-shadow: 0.7rem 0.7rem 0.5rem #F5F5F5;
+}
+
+.testimonial {
+  margin: 6rem 0;
+  padding: 4rem 10rem;
+}
+.testimonial--head {
+  text-align: center;
+  color: #000;
+}
+.testimonial--head h3 {
+  font-weight: 520;
+}
+.testimonial--line {
+  width: 6rem;
+  height: 0.15rem;
+  border-radius: 6rem;
+  margin: 0.5rem auto;
+  background: #00dc59;
+}
+.testimonial--cards {
+  display: flex;
+  justify-content: center;
+  background: greenyellow;
+  margin: 3rem 0;
+}
+.testimonial--card {
+  margin: 2rem;
+  background: honeydew;
+  max-width: 600px;
+  border-radius: 6px;
+}
+.testimonial--card p {
+  padding: 2rem;
+  text-align: justify;
+  line-height: 1.6rem;
+  font-size: 0.8rem;
+}
+.testimonial--card__profile {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 2rem;
+}
+.testimonial--card__profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.testimonial--card__profile p {
+  padding: 0 2rem;
 }
 
 .background-design .box1, .background-design .box6, .background-design .box5, .background-design .box4, .background-design .box3, .background-design .box2 {
